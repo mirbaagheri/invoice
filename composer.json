@@ -1,0 +1,31 @@
+{
+    "name": "mirbaagheri/invoice",
+    "description": "a library for create invoice manager in laravel 5",
+    "keywords": [
+        "mirbaagheri", "invoice"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sayed Mostafa Mirbagheri",
+            "email": "mostafa.mirii65@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+			"Mirbaagheri\\Invoice\\": "src/"
+        }
+    },
+    "extra": {
+        "component": "package",
+        "laravel": {
+            "providers": [
+                "Mirbaagheri\\Invoice\\Laravel\\InvoiceServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
