@@ -31,6 +31,13 @@ class InvoiceServiceProvider extends ServiceProvider{
         ], 'config');
 
         $this->config = $this->app['config']->get('mirbaagheri.invoice');
+
+        // Publish migrations
+        $migrations = realpath(__DIR__.'/../migrations');
+
+        $this->publishes([
+            $migrations => $this->app->databasePath().'/migrations',
+        ], 'migrations');
     }
 
     protected function registerInvoices()
