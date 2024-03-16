@@ -5,4 +5,7 @@ Add `Mirbaagheri\Invoice\Laravel\InvoiceServiceProvider::class` to `providers` a
 Add `'Invoice' => Mirbaagheri\Invoice\Laravel\Facades\Invoice::class` to `aliases class`.<br><br>
 
 Run the following command to publish the migrations and config file:<br>
-`php artisan vendor:publish --provider="Mirbaagheri\Invoice\Laravel\InvoiceServiceProvider"`
+`php artisan vendor:publish --provider="Mirbaagheri\Invoice\Laravel\InvoiceServiceProvider"`<br><br>
+
+Run the following command to migrate Sentinel after publishing the assets:<br>
+`php artisan migrate --path=/database/migrations/mirInvoice_migration_table`
