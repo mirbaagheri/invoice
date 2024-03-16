@@ -5,4 +5,4 @@ Add `Mirbaagheri\Invoice\Laravel\InvoiceServiceProvider::class` to `providers` a
 Add `'Invoice' => Mirbaagheri\Invoice\Laravel\Facades\Invoice::class` to `aliases class`.<br><br>
 
 Run the following command to publish the migrations and config file:<br>
-`php artisan vendor:publish --provider="Mirbaagheri\Invoice\Laravel\SentinelServiceProvider"`
+`php artisan vendor:publish --provider="Mirbaagheri\Invoice\Laravel\InvoiceServiceProvider"`
