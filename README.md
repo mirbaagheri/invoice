@@ -8,4 +8,4 @@ Run the following command to publish the migrations and config file:<br>
 `php artisan vendor:publish --provider="Mirbaagheri\Invoice\Laravel\InvoiceServiceProvider"`<br><br>
 
 Run the following command to migrate Sentinel after publishing the assets:<br>
-`php artisan migrate --path=/database/migrations/mirInvoice_migration_table`
+`php artisan migrate`
